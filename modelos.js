@@ -248,4 +248,4 @@ const modelos = {
     }
 };
 
-module.exports = modelos;
+export default modelos;
