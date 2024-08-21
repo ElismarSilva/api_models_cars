@@ -1,9 +1,9 @@
-const axios = require('axios');
+import axios from 'axios';
 
-axios.get('https://api-models-cars-6wyqb5q8f-elismars-projects.vercel.app/')
+axios.get('https://api-models-cars-git-master-elismars-projects.vercel.app/')
   .then(response => {
-    console.log('Dados da API:', response.data);
+    // Acesse o ano do modelo "Etios" dentro de "toyota"
+    const dados = response.data.fiat;
+    console.log(dados);
   })
-  .catch(error => {
-    console.error('Erro ao buscar os dados da API:', error);
-  });
+  .catch(error => console.error('Erro ao buscar os dados da API:', error));
