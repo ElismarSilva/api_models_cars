@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
   // Cria o objeto com a data/hora e os modelos
   const responseData = {
     dataHora: dataHoraAtual(),
+    modelos: modelos
   };
   
   res.json(responseData);  // Envia JSON sem HTML
