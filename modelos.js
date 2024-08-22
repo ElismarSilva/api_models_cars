@@ -247,16 +247,9 @@ const modelos = {
         agera: 2023,
         jesko: 2023
     },
-    dataHoraAtual: function() {
-        const now = new Date();
-        const data = now.toLocaleDateString('pt-BR');  // Formato dd/mm/aaaa
-        const hora = now.toLocaleTimeString('pt-BR');  // Formato hh:mm:ss
-        return `${data} - ${hora}`;
-    }
+    
 };
 
-// Exemplo de como utilizar a função dataHoraAtual
-console.log(`Data e Hora Atual: ${modelos.dataHoraAtual()}`);
 
 
 export default modelos;

@@ -4,6 +4,6 @@ axios.get('https://api-models-cars-git-master-elismars-projects.vercel.app/')
 
 .then(response => {
 
-    const dados = response.data.toyota;
+    const dados = response.data;
   console.log(dados);
 });
