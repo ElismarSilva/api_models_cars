@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
   };
   
   res.json(responseData);  // Envia JSON sem HTML
+  res.json(modelos);
+
 });
 
 app.listen(port, () => {
